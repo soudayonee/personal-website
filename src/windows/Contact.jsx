@@ -11,12 +11,17 @@ const Contact = () => {
       </div>
 
       <div className="p-5 space-y-5">
-        <div>
-          <img src="/images/nay4.jpg" alt="Photo" />
+        <div className="flex max-md:flex-col items-start gap-3">
+          <img src="/images/nay1.jpg" alt="Photo" />
+          <div className="flex flex-col">
+            <h3>Let's Be a friend</h3>
+            <p>
+              Got any suggestions for this site? Or just want to chat and be
+              friends? Feel like talking about tech, games, or even anime? Reach
+              out and let's connect!
+            </p>
+          </div>
         </div>
-
-        <h3>Let's Connect</h3>
-        <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
 
         <ul>
           {socials.map((social) => (
@@ -24,8 +29,8 @@ const Contact = () => {
               <a
                 href={social.link}
                 target="_blank"
-                rel="noopener noreferrer"
                 title={social.text}
+                onTouchStart={() => window.open(social.link, "_blank")}
               >
                 <img src={social.icon} alt={social.text} className="size-5" />
                 <p>{social.text}</p>

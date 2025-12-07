@@ -5,7 +5,7 @@ import {
   Image,
   Photos,
   Playlist,
-  Resume,
+  // Resume,
   Safari,
   Terminal,
   Text,
@@ -24,7 +24,7 @@ const App = () => {
 
     document.documentElement.style.backgroundImage = `url("/images/wallpapers/wallpaper${wallpaperId}.jpg")`;
 
-    if (wallpaperId != 1) {
+    if (wallpaperId != 1 && wallpaperId != 4) {
       document.documentElement.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/wallpapers/wallpaper${wallpaperId}.jpg")`;
     }
   }, [wallpaperId]);
@@ -36,7 +36,7 @@ const App = () => {
 
       <Terminal />
       <Safari />
-      <Resume />
+      {/* <Resume /> */}
       <Finder />
       <Text />
       <Image />

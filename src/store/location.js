@@ -2,10 +2,10 @@ import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 import { locations, photosLinks } from "#constants";
 
-const WORK_LOCATION = locations.work;
+const PROJECTS_LOCATION = locations.projects;
 const ABOUT_LOCATION = locations.about;
 
-const DEFAULT_LOCATION = WORK_LOCATION || ABOUT_LOCATION;
+const DEFAULT_LOCATION = PROJECTS_LOCATION || ABOUT_LOCATION;
 
 const useLocationStore = create(
   immer((set) => ({

@@ -252,7 +252,7 @@ body {
         }
 
         img {
-          @apply rounded-none
+          @apply rounded-none;
         }
 
         p {
@@ -323,7 +323,7 @@ body {
   }
 
   #finder {
-    @apply absolute w-full max-w-3xl overflow-hidden shadow-2xl max-h-[417px] left-40 top-20 drop-shadow-2xl rounded-xl;
+    @apply absolute w-full max-w-3xl overflow-hidden shadow-2xl max-h-[417px] left-40 top-20 drop-shadow-2xl rounded-xl h-[417px];
 
     .sidebar {
       @apply flex flex-col w-48 p-5 space-y-3 border-r border-gray-200 bg-gray-50;

@@ -1,6 +1,6 @@
 const navLinks = [
   {
-    id: 1,
+    id: 2,
     name: "Projects",
     type: "finder",
   },
@@ -38,7 +38,7 @@ const navLinks = [
 const dockApps = [
   {
     id: "finder",
-    name: "Portfolio", // was "Finder"
+    name: "Finder", // was "Finder"
     icon: "finder.png",
     canOpen: true,
   },
@@ -73,38 +73,38 @@ const dockApps = [
     canOpen: true,
     size: "w-9 sm:w-11 3xl:w-20",
   },
-  {
-    id: "trash",
-    name: "Archive", // was "Trash"
-    icon: "trash.png",
-    canOpen: false,
-  },
+  // {
+  //   id: "trash",
+  //   name: "Archive", // was "Trash"
+  //   icon: "trash.png",
+  //   canOpen: false,
+  // },
 ];
 
-const blogPosts = [
-  {
-    id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-    image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-  },
-  {
-    id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-    image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-  },
-  {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
-];
+// const blogPosts = [
+//   {
+//     id: 1,
+//     date: "Sep 2, 2025",
+//     title:
+//       "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+//     image: "/images/blog1.png",
+//     link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+//   },
+//   {
+//     id: 2,
+//     date: "Aug 28, 2025",
+//     title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+//     image: "/images/blog2.png",
+//     link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+//   },
+//   {
+//     id: 3,
+//     date: "Aug 15, 2025",
+//     title: "The Ultimate Guide to Mastering GSAP Animations",
+//     image: "/images/blog3.png",
+//     link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+//   },
+// ];
 
 const techStack = [
   {
@@ -197,11 +197,6 @@ const photosLinks = [
         name: "nay5.jpg",
         img: "/images/nay5.jpg",
       },
-      {
-        id: 6,
-        name: "nay6.jpg",
-        img: "/images/nay6.jpg",
-      },
     ],
   },
   {
@@ -216,23 +211,23 @@ const photosLinks = [
         name: "japanclub1.jpg",
         img: "/images/japanclub1.jpg",
       },
+      // {
+      //   id: 2,
+      //   name: "japanclub2.jpg",
+      //   img: "/images/japanclub2.jpg",
+      // },
       {
         id: 2,
         name: "japanclub2.jpg",
-        img: "/images/japanclub2.jpg",
-      },
-      {
-        id: 3,
-        name: "japanclub3.jpg",
         img: "/images/japanclub3.jpg",
       },
       {
-        id: 4,
+        id: 3,
         name: "band1.jpg",
         img: "/images/band1.jpg",
       },
       {
-        id: 5,
+        id: 4,
         name: "band2.jpg",
         img: "/images/band2.jpg",
       },
@@ -271,8 +266,8 @@ const photosLinks = [
     children: [
       {
         id: 1,
-        name: "nay4.jpg",
-        img: "/images/nay4.jpg",
+        name: "nay1.jpg",
+        img: "/images/nay1.jpg",
       },
       {
         id: 2,
@@ -321,42 +316,23 @@ const photosLinks = [
       },
       {
         id: 2,
-        name: "default2.jpg",
-        img: "/images/wallpapers/wallpaper4.jpg",
-        isWallpaper: true,
-      },
-      {
-        id: 3,
         name: "girl-katana.jpg",
         img: "/images/wallpapers/wallpaper2.jpg",
         isWallpaper: true,
       },
       {
-        id: 4,
+        id: 3,
         name: "minegahara.jpg",
         img: "/images/wallpapers/wallpaper3.jpg",
         isWallpaper: true,
       },
+      {
+        id: 4,
+        name: "default2.jpg",
+        img: "/images/wallpapers/wallpaper4.jpg",
+        isWallpaper: true,
+      },
     ],
-  },
-];
-
-const gallery = [
-  {
-    id: 1,
-    img: "/images/gal1.png",
-  },
-  {
-    id: 2,
-    img: "/images/gal2.png",
-  },
-  {
-    id: 3,
-    img: "/images/gal3.png",
-  },
-  {
-    id: 4,
-    img: "/images/gal4.png",
   },
 ];
 
@@ -364,14 +340,13 @@ export {
   navLinks,
   // navIcons,
   dockApps,
-  blogPosts,
+  // blogPosts,
   techStack,
   socials,
   photosLinks,
-  gallery,
 };
 
-const WORK_LOCATION = {
+const PROJECTS_LOCATION = {
   id: 1,
   type: "projects",
   name: "Projects",
@@ -385,7 +360,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[20vh] right-32", // optional: Finder window position
+      windowPosition: "top-[20vh] left-32", // optional: Finder window position
       children: [
         {
           id: 1,
@@ -395,10 +370,11 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "Catatan Keuangan Rumah Tangga is designed to help families manage their finances easily and in an organized manner.",
+            "Its main features include recording daily income and expenses, monthly budget management, categorized spending, and encrypted data security.",
+            "The app comes with a simple and intuitive interface, making it suitable for anyone who wants to live more frugally, stay organized, and reduce financial stress.",
+            "Start managing your family’s finances better with this application.",
+            "Note: The default language of this app is Indonesian, and you can change it in Pengaturan > Bahasa Aplikasi > Inggris (English).",
           ],
         },
         {
@@ -432,110 +408,110 @@ const WORK_LOCATION = {
     },
 
     // ▶ Project 2
-    {
-      id: 6,
-      name: "AI Resume Analyzer",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-52 right-80",
-      windowPosition: "top-[12vh] left-48",
-      children: [
-        {
-          id: 1,
-          name: "AI Resume Analyzer Project.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 right-10",
-          description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-          ],
-        },
-        {
-          id: 2,
-          name: "ai-resume-analyzer.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
-          position: "top-20 left-20",
-        },
-        {
-          id: 4,
-          name: "ai-resume-analyzer.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
-        },
-      ],
-    },
+    // {
+    //   id: 6,
+    //   name: "AI Resume Analyzer",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-52 right-80",
+    //   windowPosition: "top-[12vh] left-48",
+    //   children: [
+    //     {
+    //       id: 1,
+    //       name: "AI Resume Analyzer Project.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-5 right-10",
+    //       description: [
+    //         "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
+    //         "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
+    //         "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
+    //         "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+    //       ],
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "ai-resume-analyzer.com",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+    //       position: "top-20 left-20",
+    //     },
+    //     {
+    //       id: 4,
+    //       name: "ai-resume-analyzer.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-52 left-80",
+    //       imageUrl: "/images/project-2.png",
+    //     },
+    //     {
+    //       id: 5,
+    //       name: "Design.fig",
+    //       icon: "/images/plain.png",
+    //       kind: "file",
+    //       fileType: "fig",
+    //       href: "https://google.com",
+    //       position: "top-60 left-5",
+    //     },
+    //   ],
+    // },
 
-    // ▶ Project 3
-    {
-      id: 7,
-      name: "Food Delivery App",
-      icon: "/images/folder.png",
-      kind: "folder",
-      position: "top-10 left-80",
-      windowPosition: "top-[7vh] left-[91vh]",
-      children: [
-        {
-          id: 1,
-          name: "Food Delivery App Project.txt",
-          icon: "/images/txt.png",
-          kind: "file",
-          fileType: "txt",
-          position: "top-5 left-10",
-          description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
-          ],
-        },
-        {
-          id: 2,
-          name: "food-delivery-app.com",
-          icon: "/images/safari.png",
-          kind: "file",
-          fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
-          position: "top-10 right-20",
-        },
-        {
-          id: 4,
-          name: "food-delivery-app.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
-        },
-      ],
-    },
+    // // ▶ Project 3
+    // {
+    //   id: 7,
+    //   name: "Food Delivery App",
+    //   icon: "/images/folder.png",
+    //   kind: "folder",
+    //   position: "top-10 left-80",
+    //   windowPosition: "top-[7vh] left-[91vh]",
+    //   children: [
+    //     {
+    //       id: 1,
+    //       name: "Food Delivery App Project.txt",
+    //       icon: "/images/txt.png",
+    //       kind: "file",
+    //       fileType: "txt",
+    //       position: "top-5 left-10",
+    //       description: [
+    //         "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
+    //         "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
+    //         "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
+    //         "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+    //       ],
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "food-delivery-app.com",
+    //       icon: "/images/safari.png",
+    //       kind: "file",
+    //       fileType: "url",
+    //       href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+    //       position: "top-10 right-20",
+    //     },
+    //     {
+    //       id: 4,
+    //       name: "food-delivery-app.png",
+    //       icon: "/images/image.png",
+    //       kind: "file",
+    //       fileType: "img",
+    //       position: "top-52 right-80",
+    //       imageUrl: "/images/project-3.png",
+    //     },
+    //     {
+    //       id: 5,
+    //       name: "Design.fig",
+    //       icon: "/images/plain.png",
+    //       kind: "file",
+    //       fileType: "fig",
+    //       href: "https://google.com",
+    //       position: "top-60 right-20",
+    //     },
+    //   ],
+    // },
   ],
 };
 
@@ -545,7 +521,7 @@ const ABOUT_LOCATION = {
   name: "About me",
   icon: "/icons/info.svg",
   kind: "folder",
-  windowPosition: "top-[60vh] left-[76vh]",
+  windowPosition: "top-[10vh] left-[100vh]",
   children: [
     {
       id: 1,
@@ -572,7 +548,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/nay6.jpg",
+      imageUrl: "/images/nay4.jpg",
     },
     {
       id: 4,
@@ -596,24 +572,24 @@ const ABOUT_LOCATION = {
   ],
 };
 
-const RESUME_LOCATION = {
-  id: 3,
-  type: "resume",
-  name: "Resume",
-  icon: "/icons/file.svg",
-  kind: "folder",
-  children: [
-    {
-      id: 1,
-      name: "Resume.pdf",
-      icon: "/images/pdf.png",
-      kind: "file",
-      fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
-    },
-  ],
-};
+// const RESUME_LOCATION = {
+//   id: 3,
+//   type: "resume",
+//   name: "Resume",
+//   icon: "/icons/file.svg",
+//   kind: "folder",
+//   children: [
+//     {
+//       id: 1,
+//       name: "Resume.pdf",
+//       icon: "/images/pdf.png",
+//       kind: "file",
+//       fileType: "pdf",
+//       // you can add `href` if you want to open a hosted resume
+//       // href: "/your/resume/path.pdf",
+//     },
+//   ],
+// };
 
 const TRASH_LOCATION = {
   id: 4,
@@ -644,9 +620,9 @@ const TRASH_LOCATION = {
 };
 
 export const locations = {
-  work: WORK_LOCATION,
   about: ABOUT_LOCATION,
-  resume: RESUME_LOCATION,
+  projects: PROJECTS_LOCATION,
+  // resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
 

@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import clsx from "clsx";
 import { Draggable } from "gsap/Draggable";
 
-const projects = locations.work?.children ?? [];
+const projects = locations.projects?.children ?? [];
 const about = locations.about ?? [];
 
 const Home = () => {

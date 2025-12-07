@@ -20,7 +20,7 @@ const Playlist = () => {
         <iframe
           lang="en"
           title="Apple Music Playlist - Favorite Songs"
-          allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+          allow="encrypted-media *; fullscreen *; clipboard-write"
           frameBorder="0"
           height="450px"
           className="w-full sm:w-[740px] overflow-hidden rounded-bl-lg rounded-br-lg"

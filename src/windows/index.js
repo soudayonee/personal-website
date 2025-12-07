@@ -1,6 +1,6 @@
 import Terminal from "./Terminal";
 import Safari from "./Safari";
-import Resume from "./Resume";
+// import Resume from "./Resume";
 import Finder from "./Finder";
 import Text from "./Text";
 import Image from "./Image";
@@ -11,7 +11,7 @@ import Playlist from "./Playlist";
 export {
   Terminal,
   Safari,
-  Resume,
+  // Resume,
   Finder,
   Text,
   Image,

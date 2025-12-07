@@ -52,7 +52,7 @@ const Finder = () => {
         <div className="sidebar">
           {renderList("Locations", Object.values(locations))}
 
-          {renderList("My Projects", locations.work.children)}
+          {renderList("My Projects", locations.projects.children)}
         </div>
 
         <div className="content">
