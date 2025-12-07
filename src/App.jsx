@@ -20,7 +20,10 @@ const App = () => {
   const wallpaperId = localStorage.getItem("wallpaperId");
 
   useEffect(() => {
-    if (!wallpaperId) return localStorage.setItem("wallpaperId", 1);
+    if (!wallpaperId) {
+      document.documentElement.style.backgroundImage = `url("/images/wallpapers/wallpaper1.jpg")`;
+      return localStorage.setItem("wallpaperId", 1);
+    }
 
     document.documentElement.style.backgroundImage = `url("/images/wallpapers/wallpaper${wallpaperId}.jpg")`;
 
